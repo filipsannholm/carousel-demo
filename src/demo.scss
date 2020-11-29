@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 20rem;
+
+  button {
+    background-color: #fff;
+    border: 0;
+
+    &:focus {
+      border: 0;
+      outline: 0;
+    }
+  }
+
+  :global(.Carousel--controls) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.slide {
+  width: 100%;
+  margin: 5px;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 6px 0px hsla(0, 0%, 0%, 0.25);
+
+  .details {
+    padding: 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.arrow {
+  fill: rgb(36, 36, 36);
+  width: 2rem;
+  height: 2rem;
+
+  &.left {
+    transform: rotate(180deg);
+  }
+}

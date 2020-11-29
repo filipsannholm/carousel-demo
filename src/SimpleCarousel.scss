@@ -1,0 +1,28 @@
+:global {
+  .Carousel--wrapper {
+    width: 100%;
+    overflow-x: hidden;
+
+    .Carousel--track {
+      display: flex;
+      transition: transform 0.3s ease-in;
+    }
+  }
+
+  .Carousel--indicatorTrack {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    .Carousel--pageIndicator {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: #000;
+
+      &.active {
+        background-color: #ccc;
+      }
+    }
+  }
+}
